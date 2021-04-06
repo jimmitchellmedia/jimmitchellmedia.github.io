@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-NWJ329G6L2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-NWJ329G6L2');
+		</script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		{% feed_meta %}
+    	{% seo %}
+		<link rel="shortcut icon" type="image/jpg" href="/assets/images/favicon.ico"/>
+		<link rel="preload" href="/assets/images/bg.jpg" as="image">
+		<link rel="preload" href="/assets/images/profile.jpg" as="image">
+		<link rel="preload" href="/assets/css/styles.css" as="style">
+		<script src="https://kit.fontawesome.com/66d593ae38.js" crossorigin="anonymous"></script>
+		<link href="/assets/css/prism.css" rel="stylesheet" />
+		<link href="/assets/css/styles.css" rel="stylesheet" />
+		<script src="/assets/js/prism.js"></script>
+	</head>
+	<body>
+		<div class="blur">
+			<div class="content">
+	
+				{% include header.html %}
+				
+				<main>
+				{{content}}
+				</main>
+
+				{% include footer.html %}
+			
+			</div>
+		</div>
+	</body>
+</html>
