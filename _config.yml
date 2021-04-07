@@ -14,3 +14,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
+
+title: Jim Mitchell Media
+url: https://jimmitchellmedia.com
+social:
+  name: Jim Mitchell
+  links:
+    - https://twitter.com/jimmitchell
+    - https://www.linkedin.com/in/jimmitchellmedia
+    - https://github.com/jimmitchellmedia
