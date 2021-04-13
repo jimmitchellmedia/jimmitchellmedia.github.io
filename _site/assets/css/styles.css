@@ -97,7 +97,7 @@ ul.post-list a { display: inline-block; padding: 15px 0; border-bottom: 1px soli
 
 p.meta { font-size: 12px; margin: -15px 0 15px 0; text-transform: uppercase; }
 
-main { overflow: auto; width: 100%; }
+main { overflow: auto; width: 100%; text-align: center; }
 
 main img { max-width: 100%; }
 
