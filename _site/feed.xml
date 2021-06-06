@@ -1,1 +1,215 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jimmitchellmedia.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jimmitchellmedia.com/" rel="alternate" type="text/html" /><updated>2021-04-12T17:19:23-07:00</updated><id>https://jimmitchellmedia.com/feed.xml</id><title type="html">Jim Mitchell Media</title></feed>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://jimmitchellmedia.com/</id>
+  <title>Jim Mitchell</title>
+  <subtitle>The personal blog of Jim Mitchell, who has over 12 years of experience working on the Salesforce platform.</subtitle>
+  <updated>2021-06-06T10:46:51-07:00</updated>
+  <author>
+    <name>Jim Mitchell</name>
+    <uri>https://jimmitchellmedia.com/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://jimmitchellmedia.com/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en-US"
+    href="https://jimmitchellmedia.com/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <rights> © 2021 Jim Mitchell </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Seeing The Forest For The Trees</title>
+    <link href="https://jimmitchellmedia.com/posts/seeing-the-forest-for-the-trees/" rel="alternate" type="text/html" title="Seeing The Forest For The Trees" />
+    <published>2019-12-10T00:00:00-08:00</published>
+  
+    <updated>2019-12-10T00:00:00-08:00</updated>
+  
+    <id>https://jimmitchellmedia.com/posts/seeing-the-forest-for-the-trees/</id>
+    <content src="https://jimmitchellmedia.com/posts/seeing-the-forest-for-the-trees/" />
+    <author>
+      <name>Jim Mitchell</name>
+    </author>
+
+  
+    
+    <category term="Intentional Living" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      No matter how well-intentioned we are, sometimes we allow things to sneak into our lives under the guise of it being something important.
+
+We ask “Who else can do this?” Or maybe we tell ourselves “No one else is qualified enough, so I’m the one who has to do it.”
+
+When we start thinking like this, it’s our ego calling the shots. Maybe we want to be the hero, or we worry those who needed us in ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Your First Dreamforce</title>
+    <link href="https://jimmitchellmedia.com/posts/your-first-dreamforce/" rel="alternate" type="text/html" title="Your First Dreamforce" />
+    <published>2019-11-09T00:00:00-08:00</published>
+  
+    <updated>2019-11-09T00:00:00-08:00</updated>
+  
+    <id>https://jimmitchellmedia.com/posts/your-first-dreamforce/</id>
+    <content src="https://jimmitchellmedia.com/posts/your-first-dreamforce/" />
+    <author>
+      <name>Jim Mitchell</name>
+    </author>
+
+  
+    
+    <category term="Salesforce" />
+    
+    <category term="Dreamforce" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Yay! It’s your first Dreamforce!
+
+You’re pumped to finally be part of the magic. I bet you’ve already looked at a lot of other blogs to learn how to be ready before you landed here.
+
+These are a few of my recommendations to make it a more memorable experience.
+
+Comfortable Shoes
+
+You want to wear comfortable shoes your feet are already used to, so don’t buy what you plan to wear a couple of day...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>The Ant Mound</title>
+    <link href="https://jimmitchellmedia.com/posts/the-ant-mound/" rel="alternate" type="text/html" title="The Ant Mound" />
+    <published>2018-07-28T00:00:00-07:00</published>
+  
+    <updated>2018-07-28T00:00:00-07:00</updated>
+  
+    <id>https://jimmitchellmedia.com/posts/the-ant-mound/</id>
+    <content src="https://jimmitchellmedia.com/posts/the-ant-mound/" />
+    <author>
+      <name>Jim Mitchell</name>
+    </author>
+
+  
+    
+    <category term="Memories" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      One of my earliest childhood memories is traumatic, at least what would seem traumatic to a three-and-a-half-year-old little boy. Though it didn’t turn out to be the end of the world, it sure seemed like a living hell when it happened. I still carry the memory with me a half-century later, so it damaged me on some level.
+
+My family – mother, wicked step-father, newborn baby sister and myself – ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Memorable Cigarettes</title>
+    <link href="https://jimmitchellmedia.com/posts/memorable-cigarettes/" rel="alternate" type="text/html" title="Memorable Cigarettes" />
+    <published>2018-07-28T00:00:00-07:00</published>
+  
+    <updated>2018-07-28T00:00:00-07:00</updated>
+  
+    <id>https://jimmitchellmedia.com/posts/memorable-cigarettes/</id>
+    <content src="https://jimmitchellmedia.com/posts/memorable-cigarettes/" />
+    <author>
+      <name>Jim Mitchell</name>
+    </author>
+
+  
+    
+    <category term="Memories" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      After nearly fifty years, I can still remember the first time I smoked a cigarette. It was early spring and my family lived on a farm in a semi-rural part of Colorado, a little north of Denver, at the foot of the Rocky Mountains.
+
+I lived there with my mother, wicked step-father (I’m not even sure they were married, to be honest) and little half-sister. The closest kid my age lived more than fi...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Start Somewhere</title>
+    <link href="https://jimmitchellmedia.com/posts/start-somewhere/" rel="alternate" type="text/html" title="Start Somewhere" />
+    <published>2018-07-27T00:00:00-07:00</published>
+  
+    <updated>2018-07-27T00:00:00-07:00</updated>
+  
+    <id>https://jimmitchellmedia.com/posts/start-somewhere/</id>
+    <content src="https://jimmitchellmedia.com/posts/start-somewhere/" />
+    <author>
+      <name>Jim Mitchell</name>
+    </author>
+
+  
+    
+    <category term="Intentional Living" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Eventually you use up every excuse in your book for not doing the thing you keep saying you’re going to do. You’ve procrastinated yourself into a corner and realize it’s either time to just do it, or finally forget about it and move on.
+
+That’s me, sometimes…
+
+I’ve had this blog for nearly 14 years. In all that time, I only have 11 posts to show for it. That’s less than one post per year, with ...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+

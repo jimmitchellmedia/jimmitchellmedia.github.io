@@ -1,0 +1,244 @@
+[
+  
+  {
+    "title": "Seeing The Forest For The Trees",
+    "url": "/posts/seeing-the-forest-for-the-trees/",
+    "categories": "Intentional Living",
+    "tags": "",
+    "date": "2019-12-10 00:00:00 -0800",
+    
+
+
+
+
+
+    "snippet": "No matter how well-intentioned we are, sometimes we allow things to sneak into our lives under the guise of it being something important.We ask “Who else can do this?” Or maybe we tell ourselves “No one else is qualified enough, so I’m the one who has to do it.”When we start thinking like this, i..."
+  },
+  
+  {
+    "title": "Your First Dreamforce",
+    "url": "/posts/your-first-dreamforce/",
+    "categories": "Salesforce, Dreamforce",
+    "tags": "tips",
+    "date": "2019-11-09 00:00:00 -0800",
+    
+
+
+
+
+
+    "snippet": "Yay! It’s your first Dreamforce!You’re pumped to finally be part of the magic. I bet you’ve already looked at a lot of other blogs to learn how to be ready before you landed here.These are a few of my recommendations to make it a more memorable experience.Comfortable ShoesYou want to wear comfort..."
+  },
+  
+  {
+    "title": "The Ant Mound",
+    "url": "/posts/the-ant-mound/",
+    "categories": "Memories",
+    "tags": "",
+    "date": "2018-07-28 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "One of my earliest childhood memories is traumatic, at least what would seem traumatic to a three-and-a-half-year-old little boy. Though it didn’t turn out to be the end of the world, it sure seemed like a living hell when it happened. I still carry the memory with me a half-century later, so it ..."
+  },
+  
+  {
+    "title": "Memorable Cigarettes",
+    "url": "/posts/memorable-cigarettes/",
+    "categories": "Memories",
+    "tags": "",
+    "date": "2018-07-28 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "After nearly fifty years, I can still remember the first time I smoked a cigarette. It was early spring and my family lived on a farm in a semi-rural part of Colorado, a little north of Denver, at the foot of the Rocky Mountains.I lived there with my mother, wicked step-father (I’m not even sure ..."
+  },
+  
+  {
+    "title": "Start Somewhere",
+    "url": "/posts/start-somewhere/",
+    "categories": "Intentional Living",
+    "tags": "",
+    "date": "2018-07-27 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "Eventually you use up every excuse in your book for not doing the thing you keep saying you’re going to do. You’ve procrastinated yourself into a corner and realize it’s either time to just do it, or finally forget about it and move on.That’s me, sometimes…I’ve had this blog for nearly 14 years. ..."
+  },
+  
+  {
+    "title": "Eliminating Digital Distractions",
+    "url": "/posts/eliminating-digital-distractions/",
+    "categories": "Intentional Living",
+    "tags": "",
+    "date": "2017-04-13 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "Life is so full of distractions. It seems everything is vying for our attention in one way or another these days, with most of it coming from our electronic gadgets.If you take time to look up from your phone for a few minutes, you’ll find a sea of humanity with faces buried in their own device. ..."
+  },
+  
+  {
+    "title": "Saying No",
+    "url": "/posts/saying-no/",
+    "categories": "Intentional Living",
+    "tags": "",
+    "date": "2017-03-12 00:00:00 -0800",
+    
+
+
+
+
+
+    "snippet": "Saying no can be one of the hardest things to do.No to an exciting new project. No to a volunteer opportunity in the community or at church; no to the extra helping of food at a meal; no to bad habits we’ve carried around with us all our lives.There’s tremendous power in saying no. When we have t..."
+  },
+  
+  {
+    "title": "Spin Cycle",
+    "url": "/posts/spin-cycle/",
+    "categories": "Intentional Living",
+    "tags": "",
+    "date": "2017-03-07 00:00:00 -0800",
+    
+
+
+
+
+
+    "snippet": "I’ve been around long enough to know life moves in cycles.Things that were new and exciting one day eventually become dull and boring the next. The pursuit of shiny objects and interesting paths quickly fall by the wayside before you realize it. We move from one thing to the next and then another..."
+  },
+  
+  {
+    "title": "Top Chrome Extensions Every Salesforce Admin Needs",
+    "url": "/posts/top-chrome-extensions-every-salesforce-admin-needs/",
+    "categories": "Salesforce",
+    "tags": "tips",
+    "date": "2016-08-18 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "Most Salesforce admins have a list of favorite Google Chrome extensions they use to make their work just a little easier.Since I’m all about being as productive as I can possibly be, these are my top picks of the ones I regularly use to add just a tiny bit of time back into my day.Salesforce Admi..."
+  },
+  
+  {
+    "title": "Passing Your Salesforce Adm201 Certification Exam",
+    "url": "/posts/passing-your-salesforce-adm201-certification-exam/",
+    "categories": "Salesforce",
+    "tags": "tips",
+    "date": "2014-10-15 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "I passed the Salesforce ADM201 certification exam today. It’s been a five-year road to get here. From the first week I began working with Salesforce, I decided attaining certification was something I wanted to pursue.Now that I’ve done it, I thought it might be good to share the things that helpe..."
+  },
+  
+  {
+    "title": "Applescript To Compress Files And Folders",
+    "url": "/posts/applescript-to-compress-files-and-folders/",
+    "categories": "Code",
+    "tags": "applescript",
+    "date": "2014-08-02 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "I had the need to select several folders at once in the Mac OS Finder and zip them up as individual archives. This AppleScript to compress files and folders was the solution I came up with.The script compresses each item selected into its own archive, and works with both folders and files.tell ap..."
+  },
+  
+  {
+    "title": "Salesforce Flows Visualforce And Record Context",
+    "url": "/posts/salesforce-flows-visualforce-and-record-context/",
+    "categories": "Salesforce, Code",
+    "tags": "tips, code",
+    "date": "2014-07-23 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "I was asked to find a solution for our field reps that would simplify the process of adding a completed task to their activities when they visited one of our retail stores.We keep our retail locations in Salesforce.com as contacts under a master account, which is shared with all users using a spe..."
+  },
+  
+  {
+    "title": "Making A Field Appear Required On A Visualforce Page",
+    "url": "/posts/making-a-field-appear-required-on-a-visualforce-page/",
+    "categories": "Salesforce, Code, Visualforce",
+    "tags": "tips, code",
+    "date": "2012-10-19 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "I’ve been working on a force.com app with the requirement that a user must enter a valid email address on a Visualforce page before being able to save a record.But they must also be able to insert the related contact’s email address by clicking a button instead of having to leave the edit page to..."
+  },
+  
+  {
+    "title": "Applescript To Add Files In The Mac Finder",
+    "url": "/posts/applescript-to-add-files-in-the-mac-finder/",
+    "categories": "Code",
+    "tags": "applescript",
+    "date": "2011-08-12 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "Today I had the need to add a bunch of named text files to a folder in the Finder on my Mac.I found it a major pain to open BBEdit, make a new document, save it to where I wanted it, and then manually copy &amp;amp; rename the file back in the Finder. A lot of effort just to get 7 or 8 empty file..."
+  },
+  
+  {
+    "title": "Applescript To Toggle The Mac Desktop",
+    "url": "/posts/applescript-to-toggle-the-mac-desktop/",
+    "categories": "Code",
+    "tags": "applescript",
+    "date": "2010-10-16 00:00:00 -0700",
+    
+
+
+
+
+
+    "snippet": "Here’s an AppleScript I use to quickly toggle desktop visibility for taking screenshots and recording screencasts that I thought might be useful for others.Copy and paste the code into AppleScript Editor, or your editor of choice, compile and save. As always, scripts like this work best using Fas..."
+  },
+  
+  {
+    "title": "Rebuilding The Apple Mail Envelope Index",
+    "url": "/posts/rebuilding-the-apple-mail-envelope-index/",
+    "categories": "Apple, Apple Mail",
+    "tags": "tips",
+    "date": "2008-02-20 00:00:00 -0800",
+    
+
+
+
+
+
+    "snippet": "Some time ago, I set up my Gmail account in Apple Mail to copy over messages which were not sent to my jimmitchell.org account. I’m one of those guys who likes to have everything all in one place at my finger tips when I need it.After copying over the messages I wanted, I completely removed the G..."
+  }
+  
+]
+

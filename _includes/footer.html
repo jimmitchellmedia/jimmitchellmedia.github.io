@@ -1,10 +1,30 @@
-<footer>
-	<p class="social">
-		<a href="https://twitter.com/jimmitchell" target="_blank" class="twitter" title="Follow me on Twitter"><i class="fab fa-twitter"></i></a>
-		<a href="https://linkedin.com/in/jimmitchellmedia" target="_blank" class="linkedin" title="Connect with me on LinkedIn"><i class="fab fa-linkedin-in" style="text-indent:1px;"></i></a>
-		<a href="https://trailblazer.me/id/jimmitchell" target="_blank" class="salesforce" title="View my Trailblazer profile"><i class="fab fa-salesforce" style="text-indent:-2px;"></i></a>
-		<a href="https://instagram.com/trailblazer.jim" target="_blank" class="instagram" title="Follow me on Instagram"><i class="fab fa-instagram"></i></a>
-		<a href="https://github.com/jimmitchellmedia" target="_blank" class="github" title="See my projects on Github"><i class="fab fa-github"></i></a>
-	</p>
-	<p>&copy;{{ "now" | date: "%Y" }} - Jim Mitchell Media</p>
+<!--
+  The Footer
+-->
+
+<footer class="d-flex w-100 justify-content-center">
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="footer-left">
+      <p class="mb-0">
+        © {{ 'now' | date: "%Y" }}
+        <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
+        {% if site.data.rights.brief %}
+        <span data-toggle="tooltip" data-placement="top"
+          title="{{ site.data.rights.verbose }}">{{ site.data.rights.brief }}</span>
+        {% endif %}
+      </p>
+    </div>
+
+    <div class="footer-right">
+      <p class="mb-0">
+        Powered by
+        <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+        with
+        <a href="https://github.com/cotes2020/jekyll-theme-chirpy"
+          target="_blank" rel="noopener">Chirpy</a>
+        theme.
+      </p>
+    </div>
+
+  </div> <!-- div.d-flex -->
 </footer>
