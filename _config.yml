@@ -21,9 +21,9 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/category/:name/'
 
-title: Jim Mitchell
+title: Jim Mitchell Media
 description: Thoughts, Stories and Code
-author: Jim Mitchell Media
+author: Jim Mitchell
 
 paginate: 5
 permalink: /:categories/:year/:month/:day/:title/
