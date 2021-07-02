@@ -1,7 +1,6 @@
 ---
 Title: Top Chrome Extensions Every Salesforce Admin Needs
-categories: [Salesforce] # comma separated array
-tags: [tips] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 Most Salesforce admins have a list of favorite Google Chrome extensions they use to make their work just a little easier.

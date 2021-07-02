@@ -1,7 +1,6 @@
 ---
 Title: AppleScript to Add Files in the Mac Finder
-categories: [Code] # comma separated array
-tags: [applescript] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 Today I had the need to add a bunch of named text files to a folder in the Finder on my Mac.

@@ -1,0 +1,159 @@
+<!doctype html>
+<html "en-US">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NWJ329G6L2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NWJ329G6L2');
+</script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Jim Mitchell" />
+    	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Salesforce Flows Visualforce And Record Context | Jim Mitchell</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Salesforce Flows Visualforce And Record Context" />
+<meta name="author" content="Jim Mitchell Media" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I was asked to find a solution for our field reps that would simplify the process of adding a completed task to their activities when they visited one of our retail stores." />
+<meta property="og:description" content="I was asked to find a solution for our field reps that would simplify the process of adding a completed task to their activities when they visited one of our retail stores." />
+<meta property="og:site_name" content="Jim Mitchell" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-07-23T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Salesforce Flows Visualforce And Record Context" />
+<script type="application/ld+json">
+{"description":"I was asked to find a solution for our field reps that would simplify the process of adding a completed task to their activities when they visited one of our retail stores.","headline":"Salesforce Flows Visualforce And Record Context","dateModified":"2014-07-23T00:00:00-07:00","datePublished":"2014-07-23T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/07/23/salesforce-flows-visualforce-and-record-context/"},"url":"/2014/07/23/salesforce-flows-visualforce-and-record-context/","author":{"@type":"Person","name":"Jim Mitchell Media"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+		<link rel="preload" href="/assets/css/prism.css" as="style">
+		<link rel="preload" href="/assets/css/styles.css" as="style">
+		<link href="/assets/css/prism.css" rel="stylesheet" />
+		<link href="/assets/css/styles.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/66d593ae38.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a class="skip" href="/2014/07/23/salesforce-flows-visualforce-and-record-context/#skip">Skip to Main Content</a>
+		<div class="content">
+
+			<header>
+	<p class="site-title"><a href="/">Jim Mitchell</a></p>
+	<nav>
+    <ul>
+        
+        <li><a href="/" title="Home"><i class='fa fa-home'></i></a></li>
+        
+        <li><a href="/about/" title="About"><i class='fa fa-user'></i></a></li>
+        
+        <li><a href="/search/" title="Search"><i class='fa fa-search'></i></a></li>
+        
+    </ul>
+</nav>
+</header>
+			
+			<main id="skip">
+				<h1 class="post-title"><p>Salesforce Flows Visualforce And Record Context</p>
+</h1>
+<!-- <p class="meta">Wednesday, July 23, 2014</p> -->
+<article>
+<p>I was asked to find a solution for our field reps that would simplify the process of adding a completed task to their activities when they visited one of our retail stores.</p>
+
+<p>We keep our retail locations in Salesforce.com as contacts under a master account, which is shared with all users using a special account sharing rule.</p>
+
+<p>The solution I came up with was a simple flow that limited users to a specific set of enterable information, pre-filling the date of the activity, and marking the task complete when the activity was committed. Literally, the only thing they needed to do was select a picklist value and enter a comment about their visit. It was exactly what we were looking for.</p>
+
+<p><img src="/assets/images/posts/flow.png" alt="Simple Flow" title="Simple Flow example" /></p>
+
+<p>The thing I didn’t like about the flow was that when a user entered it, context kind of got lost – meaning they started out from a contact record, but didn’t have a good visual cue about where they were once they got into the flow.</p>
+
+<p>Sure, the flow was simple, but to me it’s still poor UX not to know the context of your work at all times. So, I decided to use a Visualforce page to solve the problem:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;apex:page</span> <span class="na">standardController=</span><span class="s">"Contact"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;apex:sectionheader</span> <span class="na">title=</span><span class="s">"Add Retail Store Visit"</span> <span class="na">subtitle=</span><span class="s">"{!Contact.Name}"</span><span class="nt">&gt;&lt;/apex:sectionheader&gt;</span>
+    <span class="nt">&lt;flow:interview</span> <span class="na">name=</span><span class="s">"Retail_Store_Visit"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;apex:param</span> <span class="na">name=</span><span class="s">"vContact"</span> <span class="na">value=</span><span class="s">"{!Contact.Id}"</span><span class="nt">&gt;&lt;/apex:param&gt;</span>
+        <span class="nt">&lt;apex:param</span> <span class="na">name=</span><span class="s">"vAccount"</span> <span class="na">value=</span><span class="s">"{!Contact.Account.Id}"</span><span class="nt">&gt;&lt;/apex:param&gt;</span>
+    <span class="nt">&lt;/flow:interview&gt;</span>
+<span class="nt">&lt;/apex:page&gt;</span>
+</code></pre></div></div>
+
+<p>The trouble with this was that after the flow data was committed, the user would be returned to the beginning of the flow. That’s definitely not what I wanted. I needed to go back to the contact record I started from.</p>
+
+<p>So I added the <code class="language-plaintext highlighter-rouge">finishLocation</code> attribute to the <code class="language-plaintext highlighter-rouge">&lt;flow:interview /&gt;</code> component tag. It would make sense that if I passed the Contact Id, the flow should return to the Contact record:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;flow:interview</span> <span class="na">name=</span><span class="s">"Retail_Store_Visit"</span> <span class="na">finishLocation=</span><span class="s">"{!URLFOR('/' + Contact.Id)}"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;apex:param</span> <span class="na">name=</span><span class="s">"vContact"</span> <span class="na">value=</span><span class="s">"{!Contact.Id}"</span><span class="nt">&gt;&lt;/apex:param&gt;</span>
+    <span class="nt">&lt;apex:param</span> <span class="na">name=</span><span class="s">"vAccount"</span> <span class="na">value=</span><span class="s">"{!Contact.Account.Id}"</span><span class="nt">&gt;&lt;/apex:param&gt;</span>
+<span class="nt">&lt;/flow:interview&gt;</span>
+</code></pre></div></div>
+
+<p>Nope. That didn’t do it. When the flow is entered, context gets lost, so Salesforce doesn’t really know where the user is anymore. Even using the <code class="language-plaintext highlighter-rouge">vContact</code> Apex parameter didn’t work.</p>
+
+<p>I searched help documentation for an answer, but it wasn’t all that helpful. I searched Communities and came up empty. Then I searched the <a href="http://salesforce.stackexchange.com/">Salesforce Stack Exchange</a>, where the only solution I could find was really convoluted, and didn’t even come close to solving my problem. I was vexed.</p>
+
+<p>Taking a break to get a cup of coffee, a solution dawned on me that turned out to be pretty darned simple. All I needed was an Apex variable in the page, which I could pass to the <code class="language-plaintext highlighter-rouge">finishLocation</code> component tag once the flow was complete. Oddly enough, this method is not documented – at least not that I could find.</p>
+
+<p>So…the final Visualforce page:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;apex:page</span> <span class="na">standardController=</span><span class="s">"Contact"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;apex:variable</span> <span class="na">var=</span><span class="s">"theContact"</span> <span class="na">value=</span><span class="s">"{!Contact.Id}"</span><span class="nt">&gt;&lt;/apex:variable&gt;</span>
+    <span class="nt">&lt;apex:sectionheader</span> <span class="na">title=</span><span class="s">"Add Retail Store Visit"</span> <span class="na">subtitle=</span><span class="s">"{!Contact.Name}"</span><span class="nt">&gt;&lt;/apex:sectionheader&gt;</span>
+    <span class="nt">&lt;flow:interview</span> <span class="na">name=</span><span class="s">"Retail_Store_Visit"</span> <span class="na">finishLocation=</span><span class="s">"{!URLFOR('/' &amp;amp; theContact)}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;apex:param</span> <span class="na">name=</span><span class="s">"vContact"</span> <span class="na">value=</span><span class="s">"{!Contact.Id}"</span><span class="nt">&gt;&lt;/apex:param&gt;</span>
+        <span class="nt">&lt;apex:param</span> <span class="na">name=</span><span class="s">"vAccount"</span> <span class="na">value=</span><span class="s">"{!Contact.Account.Id}"</span><span class="nt">&gt;&lt;/apex:param&gt;</span>
+    <span class="nt">&lt;/flow:interview&gt;</span>
+<span class="nt">&lt;/apex:page&gt;</span>
+</code></pre></div></div>
+
+<p>Using the Apex variable, users where returned to the contact record they started from, and could see the task they just added in the activity history related list. This was exactly what I was looking for. Everyone was happy.</p>
+
+<p>If you need to return to a starting point when using flows and Visualforce pages, consider giving this solution a try.</p>
+
+</article>
+
+
+<div class="single-pagination">
+  
+  <div class="next-link">
+    <p class="title">Newer</p>
+    <p><a href="/2014/08/02/applescript-to-compress-files-and-folders/">Applescript To Compress Files And Folders</a></p>
+  </div>
+  
+  
+  <div class="prev-link">
+    <p class="title">Older</p>
+    <p><a href="/2012/10/19/making-a-field-appear-required-on-a-visualforce-page/">Making A Field Appear Required On A Visualforce Page</a></p>
+  </div>
+  
+</div>
+
+			</main>
+
+			<footer>
+	<p class="copyright">&copy; 2021 Jim Mitchell Media</p>
+	<p class="social">
+		
+		<a href="https://twitter.com/jimmitchell" title="Twitter" target="_blank"><i class='fa fa-twitter'></i></a>
+		
+		<a href="https://trailblazer.me/id/jimmitchell" title="Trailblazer Community" target="_blank"><i class='fa fa-cloud'></i></a>
+		
+		<a href="https://instagram.com/trailblazer.jim" title="Instagram" target="_blank"><i class='fa fa-instagram'></i></a>
+		
+		<a href="https://linkedin.com/in/jimmitchellmedia" title="LinkedIn" target="_blank"><i class='fa fa-linkedin'></i></a>
+		
+		<a href="https://github.com/jimmitchell" title="Github" target="_blank"><i class='fa fa-github'></i></a>
+		
+	</p>
+</footer>
+		
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+		<script src="/assets/js/external-links.js"></script>
+		<script src="/assets/js/prism.js"></script>
+	</body>
+</html>

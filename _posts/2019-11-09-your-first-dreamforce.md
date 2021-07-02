@@ -1,7 +1,6 @@
 ---
 Title: It's Your First Dreamforce. What Should You Expect?
-categories: [Salesforce, Dreamforce] # comma separated array
-tags: [tips] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 Yay! It’s your first Dreamforce!

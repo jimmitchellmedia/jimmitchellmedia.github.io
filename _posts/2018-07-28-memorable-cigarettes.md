@@ -1,7 +1,6 @@
 ---
 Title: Memorable Cigarettes
-categories: [Memories] # comma separated array
-tags: [] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 After nearly fifty years, I can still remember the first time I smoked a cigarette. It was early spring and my family lived on a farm in a semi-rural part of Colorado, a little north of Denver, at the foot of the Rocky Mountains.

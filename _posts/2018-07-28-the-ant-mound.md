@@ -1,7 +1,6 @@
 ---
 Title: The Ant Mound
-categories: [Memories] # comma separated array
-tags: [] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 One of my earliest childhood memories is traumatic, at least what would seem traumatic to a three-and-a-half-year-old little boy. Though it didn't turn out to be the end of the world, it sure seemed like a living hell when it happened. I still carry the memory with me a half-century later, so it damaged me on some level.

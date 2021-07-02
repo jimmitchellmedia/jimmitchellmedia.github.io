@@ -1,7 +1,6 @@
 ---
 Title: Eliminating Digital Distractions
-categories: [Intentional Living] # comma separated array
-tags: [] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 Life is so full of distractions. It seems everything is vying for our attention in one way or another these days, with most of it coming from our electronic gadgets.

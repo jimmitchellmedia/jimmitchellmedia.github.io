@@ -1,0 +1,136 @@
+<!doctype html>
+<html "en-US">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NWJ329G6L2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NWJ329G6L2');
+</script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Jim Mitchell" />
+    	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Applescript To Add Files In The Mac Finder | Jim Mitchell</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Applescript To Add Files In The Mac Finder" />
+<meta name="author" content="Jim Mitchell Media" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Today I had the need to add a bunch of named text files to a folder in the Finder on my Mac." />
+<meta property="og:description" content="Today I had the need to add a bunch of named text files to a folder in the Finder on my Mac." />
+<meta property="og:site_name" content="Jim Mitchell" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2011-08-12T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Applescript To Add Files In The Mac Finder" />
+<script type="application/ld+json">
+{"description":"Today I had the need to add a bunch of named text files to a folder in the Finder on my Mac.","headline":"Applescript To Add Files In The Mac Finder","dateModified":"2011-08-12T00:00:00-07:00","datePublished":"2011-08-12T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2011/08/12/applescript-to-add-files-in-the-mac-finder/"},"url":"/2011/08/12/applescript-to-add-files-in-the-mac-finder/","author":{"@type":"Person","name":"Jim Mitchell Media"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+		<link rel="preload" href="/assets/css/prism.css" as="style">
+		<link rel="preload" href="/assets/css/styles.css" as="style">
+		<link href="/assets/css/prism.css" rel="stylesheet" />
+		<link href="/assets/css/styles.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/66d593ae38.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a class="skip" href="/2011/08/12/applescript-to-add-files-in-the-mac-finder/#skip">Skip to Main Content</a>
+		<div class="content">
+
+			<header>
+	<p class="site-title"><a href="/">Jim Mitchell</a></p>
+	<nav>
+    <ul>
+        
+        <li><a href="/" title="Home"><i class='fa fa-home'></i></a></li>
+        
+        <li><a href="/about/" title="About"><i class='fa fa-user'></i></a></li>
+        
+        <li><a href="/search/" title="Search"><i class='fa fa-search'></i></a></li>
+        
+    </ul>
+</nav>
+</header>
+			
+			<main id="skip">
+				<h1 class="post-title"><p>Applescript To Add Files In The Mac Finder</p>
+</h1>
+<!-- <p class="meta">Friday, August 12, 2011</p> -->
+<article>
+<p>Today I had the need to add a bunch of named text files to a folder in the Finder on my Mac.</p>
+
+<p>I found it a major pain to open BBEdit, make a new document, save it to where I wanted it, and then manually copy &amp; rename the file back in the Finder. A lot of effort just to get 7 or 8 empty files with different names.</p>
+
+<p>So, I threw together this little AppleScript to add empty files instead. The gist is once launched in the Finder (using <a href="http://www.red-sweater.com/fastscripts/">FastScripts</a> by <a href="http://www.red-sweater.com/">Red Sweater</a> naturally. Keystroke: cmd+option+shift+N), a dialog pops up that lets you enter a file title. Then the Finder creates that file in the front-most window. If no window is open, the file is added to your Desktop.</p>
+
+<p>I found this to be more than twice as fast as the “traditional” method of making several files. Hopefully, it can help you out too. Remember, use it with <a href="http://www.red-sweater.com/fastscripts/">FastScripts</a> for quick keystroke access. Save as a script in the “Finder” scripts folder <code class="language-plaintext highlighter-rouge">("~/Library/Scripts/Applications/Finder/")</code>.</p>
+
+<p>Here’s the code. Just copy and paste into AppleScript Editor and save…</p>
+
+<div class="language-applescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">property</span><span class="w"> </span><span class="nv">defaultFileName</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"newFile.txt"</span><span class="w">
+</span><span class="k">tell</span><span class="w"> </span><span class="k">me</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="nb">activate</span><span class="w">
+</span><span class="k">set</span><span class="w"> </span><span class="nv">theFileName</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="na">text returned</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="p">(</span><span class="nb">display dialog</span><span class="w"> </span><span class="s2">"Enter a file name:"</span><span class="w"> </span><span class="nv">default</span><span class="w"> </span><span class="nv">answer</span><span class="w"> </span><span class="nv">defaultFileName</span><span class="p">)</span><span class="w">
+</span><span class="k">tell</span><span class="w"> </span><span class="nb">application</span><span class="w"> </span><span class="s2">"Finder"</span><span class="w">
+    </span><span class="nb">activate</span><span class="w">
+    </span><span class="k">if</span><span class="w"> </span><span class="nb">the</span><span class="w"> </span><span class="p">(</span><span class="nb">count</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nb">windows</span><span class="p">)</span><span class="w"> </span><span class="ow">is not</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">then</span><span class="w">
+        </span><span class="k">set</span><span class="w"> </span><span class="nv">theFolder</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="p">(</span><span class="nv">folder</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nb">the</span><span class="w"> </span><span class="nb">front</span><span class="w"> </span><span class="na">window</span><span class="p">)</span><span class="w"> </span><span class="k">as </span><span class="nc">text</span><span class="w">
+        </span><span class="k">set</span><span class="w"> </span><span class="nv">theFolder</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="nv">POSIX</span><span class="w"> </span><span class="na">path</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nv">theFolder</span><span class="w">
+    </span><span class="k">else</span><span class="w">
+        </span><span class="k">set</span><span class="w"> </span><span class="nv">theFolder</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="nv">POSIX</span><span class="w"> </span><span class="na">path</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="p">(</span><span class="k">get</span><span class="w"> </span><span class="nb">path to</span><span class="w"> </span><span class="nv">desktop</span><span class="p">)</span><span class="w">
+    </span><span class="k">end</span><span class="w"> </span><span class="k">if</span><span class="w">
+    </span><span class="k">set</span><span class="w"> </span><span class="nv">addedFile</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="p">(</span><span class="nv">theFolder</span><span class="w"> </span><span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span><span class="w"> </span><span class="nv">theFileName</span><span class="p">)</span><span class="w">
+    </span><span class="nb">do shell script</span><span class="w"> </span><span class="s2">"touch '"</span><span class="w"> </span><span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span><span class="w"> </span><span class="nv">addedFile</span><span class="w"> </span><span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span><span class="w"> </span><span class="s2">"'"</span><span class="w">
+    </span><span class="k">if</span><span class="w"> </span><span class="nb">the</span><span class="w"> </span><span class="p">(</span><span class="nb">count</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nb">windows</span><span class="p">)</span><span class="w"> </span><span class="ow">is not</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">then</span><span class="w">
+        </span><span class="k">set</span><span class="w"> </span><span class="nv">addedFile</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="p">(</span><span class="nv">POSIX</span><span class="w"> </span><span class="nv">file</span><span class="w"> </span><span class="nv">addedFile</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nv">alias</span><span class="w">
+        </span><span class="nb">select</span><span class="w"> </span><span class="nv">addedFile</span><span class="w">
+    </span><span class="k">end</span><span class="w"> </span><span class="k">if</span><span class="w">
+</span><span class="k">end</span><span class="w"> </span><span class="k">tell</span><span class="w">
+</span></code></pre></div></div>
+
+</article>
+
+
+<div class="single-pagination">
+  
+  <div class="next-link">
+    <p class="title">Newer</p>
+    <p><a href="/2012/10/19/making-a-field-appear-required-on-a-visualforce-page/">Making A Field Appear Required On A Visualforce Page</a></p>
+  </div>
+  
+  
+  <div class="prev-link">
+    <p class="title">Older</p>
+    <p><a href="/2010/10/16/applescript-to-toggle-the-mac-desktop/">Applescript To Toggle The Mac Desktop</a></p>
+  </div>
+  
+</div>
+
+			</main>
+
+			<footer>
+	<p class="copyright">&copy; 2021 Jim Mitchell Media</p>
+	<p class="social">
+		
+		<a href="https://twitter.com/jimmitchell" title="Twitter" target="_blank"><i class='fa fa-twitter'></i></a>
+		
+		<a href="https://trailblazer.me/id/jimmitchell" title="Trailblazer Community" target="_blank"><i class='fa fa-cloud'></i></a>
+		
+		<a href="https://instagram.com/trailblazer.jim" title="Instagram" target="_blank"><i class='fa fa-instagram'></i></a>
+		
+		<a href="https://linkedin.com/in/jimmitchellmedia" title="LinkedIn" target="_blank"><i class='fa fa-linkedin'></i></a>
+		
+		<a href="https://github.com/jimmitchell" title="Github" target="_blank"><i class='fa fa-github'></i></a>
+		
+	</p>
+</footer>
+		
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+		<script src="/assets/js/external-links.js"></script>
+		<script src="/assets/js/prism.js"></script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+- name: <i class='fa fa-twitter'></i>
+  link: https://twitter.com/jimmitchell
+  title: Twitter
+- name: <i class='fa fa-cloud'></i>
+  link: https://trailblazer.me/id/jimmitchell
+  title: Trailblazer Community
+- name: <i class='fa fa-instagram'></i>
+  link: https://instagram.com/trailblazer.jim
+  title: Instagram
+- name: <i class='fa fa-linkedin'></i>
+  link: https://linkedin.com/in/jimmitchellmedia
+  title: LinkedIn
+- name: <i class='fa fa-github'></i>
+  link: https://github.com/jimmitchell
+  title: Github

@@ -1,0 +1,121 @@
+<!doctype html>
+<html "en-US">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NWJ329G6L2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NWJ329G6L2');
+</script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Jim Mitchell" />
+    	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Rebuilding The Apple Mail Envelope Index | Jim Mitchell</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Rebuilding The Apple Mail Envelope Index" />
+<meta name="author" content="Jim Mitchell Media" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Some time ago, I set up my Gmail account in Apple Mail to copy over messages which were not sent to my jimmitchell.org account. I’m one of those guys who likes to have everything all in one place at my finger tips when I need it." />
+<meta property="og:description" content="Some time ago, I set up my Gmail account in Apple Mail to copy over messages which were not sent to my jimmitchell.org account. I’m one of those guys who likes to have everything all in one place at my finger tips when I need it." />
+<meta property="og:site_name" content="Jim Mitchell" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2008-02-20T00:00:00-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Rebuilding The Apple Mail Envelope Index" />
+<script type="application/ld+json">
+{"description":"Some time ago, I set up my Gmail account in Apple Mail to copy over messages which were not sent to my jimmitchell.org account. I’m one of those guys who likes to have everything all in one place at my finger tips when I need it.","headline":"Rebuilding The Apple Mail Envelope Index","dateModified":"2008-02-20T00:00:00-08:00","datePublished":"2008-02-20T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2008/02/20/rebuilding-the-apple-mail-envelope-index/"},"url":"/2008/02/20/rebuilding-the-apple-mail-envelope-index/","author":{"@type":"Person","name":"Jim Mitchell Media"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+		<link rel="preload" href="/assets/css/prism.css" as="style">
+		<link rel="preload" href="/assets/css/styles.css" as="style">
+		<link href="/assets/css/prism.css" rel="stylesheet" />
+		<link href="/assets/css/styles.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/66d593ae38.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a class="skip" href="/2008/02/20/rebuilding-the-apple-mail-envelope-index/#skip">Skip to Main Content</a>
+		<div class="content">
+
+			<header>
+	<p class="site-title"><a href="/">Jim Mitchell</a></p>
+	<nav>
+    <ul>
+        
+        <li><a href="/" title="Home"><i class='fa fa-home'></i></a></li>
+        
+        <li><a href="/about/" title="About"><i class='fa fa-user'></i></a></li>
+        
+        <li><a href="/search/" title="Search"><i class='fa fa-search'></i></a></li>
+        
+    </ul>
+</nav>
+</header>
+			
+			<main id="skip">
+				<h1 class="post-title"><p>Rebuilding The Apple Mail Envelope Index</p>
+</h1>
+<!-- <p class="meta">Wednesday, February 20, 2008</p> -->
+<article>
+<p>Some time ago, I set up my Gmail account in Apple Mail to copy over messages which were not sent to my jimmitchell.org account. I’m one of those guys who likes to have everything all in one place at my finger tips when I need it.</p>
+
+<p>After copying over the messages I wanted, I completely removed the Gmail IMAP account from Mail and went about my business. Soon after, when I went searching for a specific email, I experienced the phenomenon of ghost emails in the search results.</p>
+
+<p>These are messages that Mail once knew about, but no longer knows where they exist. The ghost emails were all from the since removed Gmail account.</p>
+
+<p>If you’re experiencing the same problem, here’s a very simple fix to rebuild the Apple Mail envelope index.</p>
+
+<p>First, quit Apple Mail if it’s running, then navigate your way to “~/Library/Mail/” (where “~” is your home folder) in the Finder. Once you’re in the Mail folder, you’ll see a file named “Envelope Index” which keeps track of where all messages are located. Rename “Envelope Index” to “Envelope Index Backup” (We don’t want to trash the file just yet).</p>
+
+<p><img src="/assets/images/posts/mail-folder.png" alt="Mail Folder" title="Apple Mail Folder" /></p>
+
+<p>Then, relaunch Apple Mail. You’ll be presented with a daunting “Message Import” dialog that looks like your email account was wiped out and you’re starting all over. Fear not. You’re simply rebuilding the Envelope Index at this point.</p>
+
+<p><img src="/assets/images/posts/mail-import-message.png" alt="Mail Import Message" title="Mail Import Message" /></p>
+
+<p>Click “Continue” to rebuild the index. Once it’s done, all those pesky phantom messages will be gone the next time you perform a search in Mail (Yay!). You can then go back to the “~/Library/Mail/” folder in the Finder and move the file you renamed to “Envelope Index Backup” to the Trash.</p>
+
+<p>And there it is. Your Apple Mail Envelope index has been rebuilt. A very simple solution to a problem that has baffled some of the best Mac users.</p>
+
+</article>
+
+
+<div class="single-pagination">
+  
+  <div class="next-link">
+    <p class="title">Newer</p>
+    <p><a href="/2010/10/16/applescript-to-toggle-the-mac-desktop/">Applescript To Toggle The Mac Desktop</a></p>
+  </div>
+  
+  
+</div>
+
+			</main>
+
+			<footer>
+	<p class="copyright">&copy; 2021 Jim Mitchell Media</p>
+	<p class="social">
+		
+		<a href="https://twitter.com/jimmitchell" title="Twitter" target="_blank"><i class='fa fa-twitter'></i></a>
+		
+		<a href="https://trailblazer.me/id/jimmitchell" title="Trailblazer Community" target="_blank"><i class='fa fa-cloud'></i></a>
+		
+		<a href="https://instagram.com/trailblazer.jim" title="Instagram" target="_blank"><i class='fa fa-instagram'></i></a>
+		
+		<a href="https://linkedin.com/in/jimmitchellmedia" title="LinkedIn" target="_blank"><i class='fa fa-linkedin'></i></a>
+		
+		<a href="https://github.com/jimmitchell" title="Github" target="_blank"><i class='fa fa-github'></i></a>
+		
+	</p>
+</footer>
+		
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+		<script src="/assets/js/external-links.js"></script>
+		<script src="/assets/js/prism.js"></script>
+	</body>
+</html>

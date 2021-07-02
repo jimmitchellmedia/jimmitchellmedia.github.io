@@ -1,0 +1,10 @@
+- name: <i class='fa fa-home'></i>
+  link: /
+  title: Home
+- name: <i class='fa fa-user'></i>
+  link: /about/
+  title: About
+- name: <i class='fa fa-search'></i>
+  link: /search/
+  title: Search
+

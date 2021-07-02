@@ -1,0 +1,38 @@
+<!doctype html>
+<html "en-US">
+	<head>
+		{% include gtag.html %}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		{% feed_meta %}
+    	{% seo %}
+		<link rel="shortcut icon" href="/assets/images/favicon.ico"/>
+		<link rel="preload" href="/assets/css/styles.css" as="style">
+		<link href="/assets/css/styles.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/66d593ae38.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<a class="skip" href="{{ site.url }}{{ page.url }}#skip">Skip to Main Content</a>
+		<div class="content">
+
+			{% include header.html %}
+			
+			<main id="skip">
+                {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
+				{% for year in postsByYear %}
+					<h3 class="archive-year" >{{ year.name }}</h3>
+					<ul class="post-list archive-list">
+					{% for post in year.items %}
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+					{% endfor %}
+					</ul>
+				{% endfor %}
+			</main>
+
+			{% include footer.html %}
+		
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+</html>

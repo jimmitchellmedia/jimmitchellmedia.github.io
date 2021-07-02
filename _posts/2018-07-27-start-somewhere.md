@@ -1,7 +1,6 @@
 ---
 Title: Start Somewhere
-categories: [Intentional Living] # comma separated array
-tags: [] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 Eventually you use up every excuse in your book for not doing the thing you keep saying you’re going to do. You’ve procrastinated yourself into a corner and realize it’s either time to just do it, or finally forget about it and move on.

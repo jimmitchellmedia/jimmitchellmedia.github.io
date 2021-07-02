@@ -1,7 +1,6 @@
 ---
 Title: Spin Cycle
-categories: [Intentional Living] # comma separated array
-tags: [] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 I’ve been around long enough to know life moves in cycles.

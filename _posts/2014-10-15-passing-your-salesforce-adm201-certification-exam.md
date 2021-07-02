@@ -1,7 +1,6 @@
 ---
 Title: Passing Your Salesforce ADM201 Certification Exam
-categories: [Salesforce] # comma separated array
-tags: [tips] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 I passed the Salesforce ADM201 certification exam today. It’s been a five-year road to get here. From the first week I began working with Salesforce, I decided attaining certification was something I wanted to pursue.
 

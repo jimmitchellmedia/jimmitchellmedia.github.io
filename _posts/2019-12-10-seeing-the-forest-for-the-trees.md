@@ -1,7 +1,6 @@
 ---
 Title: Seeing the Forest for the Trees
-categories: [Intentional Living] # comma separated array
-tags: [] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 No matter how well-intentioned we are, sometimes we allow things to sneak into our lives under the guise of it being something important.

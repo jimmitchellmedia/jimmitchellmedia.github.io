@@ -1,7 +1,6 @@
 ---
 Title: Salesforce Flows, Visualforce and Record Context
-categories: [Salesforce, Code] # comma separated array
-tags: [tips, code] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 I was asked to find a solution for our field reps that would simplify the process of adding a completed task to their activities when they visited one of our retail stores.
@@ -10,7 +9,7 @@ We keep our retail locations in Salesforce.com as contacts under a master accoun
 
 The solution I came up with was a simple flow that limited users to a specific set of enterable information, pre-filling the date of the activity, and marking the task complete when the activity was committed. Literally, the only thing they needed to do was select a picklist value and enter a comment about their visit. It was exactly what we were looking for.
 
-![Simple Flow](/assets/img/posts/flow.png "Simple Flow example")
+![Simple Flow](/assets/images/posts/flow.png "Simple Flow example")
 
 The thing I didn't like about the flow was that when a user entered it, context kind of got lost -- meaning they started out from a contact record, but didn't have a good visual cue about where they were once they got into the flow.
 

@@ -1,7 +1,6 @@
 ---
 Title: AppleScript to Compress Files and Folders
-categories: [Code] # comma separated array
-tags: [applescript] # comma separated array. TAG names should always be lowercase
+comments: true
 ---
 
 I had the need to select several folders at once in the Mac OS Finder and zip them up as individual archives. This AppleScript to compress files and folders was the solution I came up with.
